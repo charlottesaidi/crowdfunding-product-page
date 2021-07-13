@@ -90,10 +90,13 @@
                 <div id="pledge_1" class="hidden pledge-selected">
                     <div class="container vw-pledge valign-wrapper">
                         <div class="label">
-                            <label>Enter your pledge</label>
+                            <p>Enter your pledge</p>
                         </div>
                         <div class="form_group valign-wrapper">
-                            <input type="number" name="pledge_1" placeholder="75" min="75">
+                            <label>
+                                <span class="num_label grey-text">$</span>
+                                <input type="number" name="pledge_1" min="75" value="75">
+                            </label>
                             <input type="submit" class="btn-small custom-btn submitted" value="Continue">
                         </div>
                     </div>
@@ -126,10 +129,13 @@
                 <div id="pledge_2" class="hidden pledge-selected">
                     <div class="container vw-pledge valign-wrapper">
                         <div class="label">
-                            <label>Enter your pledge</label>
+                            <p>Enter your pledge</p>
                         </div>
                         <div class="form_group valign-wrapper">
-                            <input type="number" name="pledge_2" placeholder="200" min="200">
+                            <label>
+                                <span class="num_label grey-text">$</span>
+                                <input type="number" name="pledge_2" min="200" value="200">
+                            </label>
                             <input type="submit" class="btn-small custom-btn submitted" value="Continue">
                         </div>
                     </div>
