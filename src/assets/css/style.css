@@ -74,7 +74,7 @@ h3, h4 {font-size: 20px; font-weight: 700; margin: 0}
 .pledge-selected {border-top: solid 1px #d6d6d6}
 .pledge-selected .valign-wrapper {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row wrap; flex-flow: row wrap}
 .vw-pledge {padding: 20px 0 0 0;}
-.pledge-selected .btn-small.custom-btn.submitted {padding: 0; width: 100px;}
+.pledge-selected .btn-small.custom-btn.submitted, .pledge-selected .btn-small.custom-btn.disabled {padding: 0; width: 100px;}
 .form_group {width: 195px; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;}
 .label {width: 50%}
 .label p {margin: 0}
@@ -96,7 +96,7 @@ nav a:hover {background: transparent !important; text-decoration: underline;}
 #bookmarked.active svg circle {fill: hsl(176, 72%, 28%)}
 #bookmarked.active svg path {fill: #fff}
 #bookmarked.active .btn-large.custom-btn, .btn-small.active {color: hsl(176, 72%, 28%) !important;}
-.black-pledge label .black-text:hover {color: hsl(176, 50%, 47%) !important}
+.black-pledge label .black-text:not(.out .black-pledge label .black-text):hover {color: hsl(176, 50%, 47%) !important}
 [type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after {border: 1px solid #d6d6d6 !important}
 [type="radio"]:not(:checked)+span:hover:before, [type="radio"]:not(:checked)+span:hover:after {border: 1px solid hsl(176, 50%, 47%) !important}
 .modal .sub-section.active {border: hsl(176, 50%, 47%) solid 1px;}

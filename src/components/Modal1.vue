@@ -136,7 +136,7 @@
                                 <span class="num_label grey-text">$</span>
                                 <input type="number" name="pledge_2" min="200" value="200">
                             </label>
-                            <input type="submit" class="btn-small custom-btn submitted" value="Continue">
+                            <input type="submit" class="btn-small custom-btn disabled" value="Continue">
                         </div>
                     </div>
                 </div>
