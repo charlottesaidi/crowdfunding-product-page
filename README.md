@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Built with
 
-- VueJs[https://vuejs.org/]
-- MaterializeCss[https://materializecss.com/]
+- [VueJs](https://vuejs.org)
+- [MaterializeCss](https://materializecss.com/)
 - CSS custom properties
 - Flexbox
 - JQuery
