@@ -8,7 +8,8 @@
                 <img src="./assets/images/logo.svg" alt="" class="logo_img">
               </a>
               <a href="#" data-target="mobile-demo" class="sidenav_trigger right">
-                <img src="./assets/images/icon-hamburger.svg" class="menu_icon" alt="">
+                <img src="./assets/images/icon-hamburger.svg" class="open_menu" alt="">
+                <img src="./assets/images/icon-close-menu.svg" class="close_menu hidden" alt="">
               </a>
               <ul class="right main-nav">
                 <li><a href="#">About</a></li>
@@ -173,13 +174,15 @@ export default {
   },
   mounted() {
     $(document).ready(function(){
-      $('.sidenav_trigger').click(function(e) {
-        e.preventDefault();
-        var src = ($('.menu_icon').attr('src') === '/img/icon-hamburger.f8b2673b.svg')
-            ? '/img/icon-close-menu.7b0ab1a3.svg'
-            : '/img/icon-hamburger.f8b2673b.svg';
-         $('.menu_icon').attr('src', src);
-        console.log(src)
+      $('.open_menu').click(function() {
+        $(this).hide();
+        $('.close_menu').show();
+        $('.sidenav').slideToggle('slow')
+      })
+      
+      $('.close_menu').click(function() {
+        $(this).hide();
+        $('.open_menu').show();
         $('.sidenav').slideToggle('slow')
       })
     }); 
